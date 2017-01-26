@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../ui";
+
+.c--user-forms {
+    background-color: $white;
+    padding: 20px;
+    @extend .ui-shadow;
+
+
+    h1, h2, h3, h4, h5{
+        text-align: center;
+    }
+
+    h1, h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    h5 {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    form {
+        text-align: center;
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+
+            &[type='button'], &[type='submit'] {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    }
+}

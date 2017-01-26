@@ -1,0 +1,118 @@
+@import "variables";
+
+/* HTML ELEMENTS....................................... */
+body {
+    background-color: $backgroundBlue;
+    color: $darkBlue;
+    font: 12px/1.4em 'Ubuntu', Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+/* heading */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; line-height: 1em; margin: 1em 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+h1 { font-size: 2.2em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+/* text related */
+a:link, a:visited { color: $mediumRed; -webkit-transition: color 0.15s linear; -moz-transition: color 0.15s linear; -o-transition: color 0.15s linear; transition: color 0.15s linear; }
+a:hover, a:active { color: $darkRed; }
+p { margin: 1em 0; }
+.bold { font-weight: bold }
+
+
+/* LAYOUT ............................................. */
+
+/* grid */
+.row:before, .row:after, .column:before, .column:after { content: ""; display: table; }
+.row:after, .column:after { clear: both; }
+.row, .column { zoom: 1; }
+
+.row { margin: 0 auto; padding: 20px 0; width: 960px; }
+.row .row { margin: 0 -1.0416%; padding: 0; width: auto; }
+.column { display: inline; float: left; margin: 0 1.0416%; position: relative; }
+.ui--grid__1 { width: 6.25%; }
+.ui--grid__2 { width: 14.583%; }
+.ui--grid__3 { width: 22.916%; }
+.ui--grid__4 { width: 31.25%; }
+.ui--grid__5 { width: 39.583%; }
+.ui--grid__6 { width: 47.916%; }
+.ui--grid__7 { width: 56.25%; }
+.ui--grid__8 { width: 64.583%; }
+.ui--grid__9 { width: 72.916%; }
+.ui--grid__10 { width: 81.25%; }
+.ui--grid__11 { width: 89.583%; }
+.ui--grid__12 { width: 97.916%; }
+
+.row .ui--grid__center {
+    margin: auto;
+    float: none;
+}
+
+/* Universal ........... */
+.clear { clear: both; }
+
+/* Header .............. */
+header {
+    margin: 0 auto;
+}
+
+/* Navigation .......... */
+nav {
+    margin: 0 auto;
+    width: auto;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: auto;
+        }
+    }
+}
+
+/* Main ................ */
+main { margin: 0 auto;  }
+
+/* Footer .............. */
+footer {
+    margin: 0 auto;
+}
+
+
+/* RESPONSIVE ......................................... */
+
+@media screen and (max-width: 961px) {
+
+    .row { width: 100%; }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .row { padding: 10px 0; }
+    .row .row { margin: 0; width: 100%; }
+    .column { padding: 0 10px; width: 100%; margin: 0; -moz-box-sizing: border-box; box-sizing: border-box; }
+    .row .row .column { margin: 0; padding: 0; width: 100%; }
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}

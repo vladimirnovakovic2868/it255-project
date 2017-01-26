@@ -1,0 +1,91 @@
+@import '../variables';
+@import '../ui';
+
+.c-message-form {
+
+    &:not(.c-message-form__main-input) {
+        border-top: 1px solid $lightGrey;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    textarea {
+        display: block;
+        resize: none;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        @extend .ui-shadow-light;
+        margin: 20px 0;
+        border: 0;
+        line-height: 1em;
+    }
+
+    input[type='button'] {
+        min-width: 150px;
+        float: right;
+    }
+
+    &__main-input{
+        background-color: $white;
+        padding: 10px;
+        @extend .ui-shadow;
+
+        form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            label {
+                display: none;
+            }
+
+            textarea {
+                width: 75%;
+            }
+
+            input[type='button']{
+                width: 20%;
+                float: none;
+
+            }
+
+            textarea, input[type='button']{
+                height: 3em;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .c-message-form {
+        &__main-input{
+            form {
+                display: block;
+
+                label {
+                    display: block;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: auto;
+                    margin: 20px 0;
+                }
+
+                input[type='button']{
+                    width: 20%;
+                    float: right;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "../ui";
+
+.c-message-replies {
+    background-color: #fff;
+    padding: 10px;
+    @extend .ui-shadow-light;
+
+    .c-message-form form {
+        width: 100%;
+    }
+
+    .c-message {
+        @extend .ui-shadow-light;
+    }
+}
+
+.c-message-view {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+@import "../ui";
+
+html {
+    h1 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+}
+
+header {
+    @extend .ui-shadow;
+    background-color: $darkBlue;
+    color: $white;
+
+    h3 {
+        display: inline-block;
+        margin: 0;
+        line-height: 1.5em;
+    }
+
+    .ui-button {
+        min-width: 120px;
+        float: right;
+    }
+
+    a:link, a:visited {
+
+    }
+}

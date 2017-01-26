@@ -1,0 +1,70 @@
+@import "variables";
+
+.ui-shadow {
+    box-shadow: 0 0 10px 0 $mediumLightGrey;
+}
+
+.ui-shadow-light {
+    box-shadow: 0 0 5px 0 $mediumLightGrey;
+}
+
+.ui-input {
+
+    .ui-input-shadow {
+        @extend .ui-shadow-light;
+        border: 0;
+    }
+
+    border: 0;
+    border-bottom: 2px solid $lightGrey;
+    line-height: 3em;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.ui-button {
+    padding: 5px;
+    line-height: 2em;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 0.25s;
+    border: 0;
+    text-transform: uppercase;
+    background-color: $mediumLightGrey;
+    color: $white;
+
+    &:hover {
+        background: $mediumGrey;
+    }
+    @extend .ui-shadow;
+
+    &__blue{
+        background-color: $mediumBlue;
+        color: $white;
+
+        &:hover {
+            background: $darkBlue;
+            color: $white;
+        }
+    }
+
+    &__red{
+        background-color: $mediumRed;
+        color: $white;
+
+        &:hover {
+            background: $darkRed;
+            color: $white;
+        }
+    }
+
+    &__green{
+        background-color: $mediumLightGreen;
+        color: $white;
+
+        &:hover {
+            background: $mediumGreen;
+            color: $white;
+        }
+    }
+}
